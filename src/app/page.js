@@ -7,6 +7,8 @@ import TextType from "@/components/TextType";
 import FlowingMenu from "@/components/FlowingMenu";
 import ImageTrail from "@/components/ImageTrail";
 
+import { FaInstagram } from "react-icons/fa";
+
 export default function Home() {
   const demoItems = [
     {
@@ -64,22 +66,22 @@ export default function Home() {
         </div>
       </main>
       <section className="relative bg-white rounded-[60px] w-full m-h-96 pt-10">
-        <h1 className="text-[#F37A0E] text-3xl font-semibold text-center">
+        <h1 className="text-[#F37A0E] text-2xl font-semibold text-center">
           WHO WE ARE
         </h1>
-        <p className="text-black text-center text-4xl">
+        <p className="text-black text-center text-3xl">
           Driving business growth through smart and impactful digital marketing
         </p>
         <div className="w-full flex justify-around flex-row p-10">
           <div className="w-1/2">
-            <p className="text-black text-xl">
+            <p className="text-black text-md">
               Founded in 2025, Mage Marketer is a dynamic digital marketing
               agency in Pune. Our journey began with a simple yet powerful
               vision: to empower businesses with innovative digital marketing
               strategies that drive growth and success in the online world.
             </p>
             <br />
-            <p className="text-black text-xl">
+            <p className="text-black text-md">
               The name <strong>Team 99</strong> reflects our approach to digital
               marketing, combining the art of creativity to craft magical
               solutions for our clients. Our team consists of passionate
@@ -166,6 +168,32 @@ export default function Home() {
             marqueeTextColor="#FFFFFF"
             borderColor="#ffffff"
           />
+        </div>
+      </section>
+      <section className="w-full m-h-96 bg-amber-50 rounded-4xl p-10 flex justify-center items-center flex-col">
+        <div>
+          <h1 className="text-center text-[#F37A0E] text-3xl font-semibold">
+            Our Services
+          </h1>
+          <h2 className="text-black text-center text-2xl">
+            Strategic Services Designed to Elevate Your Brand
+          </h2>
+        </div>
+        <h3 className="text-black text-center w-1/2 mt-4">
+          We understand that the digital landscape is constantly evolving and we
+          are here to guide you through it. With our comprehensive range of
+          digital marketing services, we can assist you in achieving your online
+          goals and growing your business.
+        </h3>
+        <div className="w-full h-full">
+          <div className="bg-white w-96">
+            <FaInstagram className="text-black" />
+            <h1 className="text-black">Social Media Marketing</h1>
+            <p className="text-black">
+              Boost brand engagement with powerful social media compaigns
+            </p>
+            <button className="text-black">Learn more</button>
+          </div>
         </div>
       </section>
     </>

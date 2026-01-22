@@ -11,9 +11,10 @@ export default function Navbar() {
             alt="logo"
             width={100}
             height={100}
-            className="w-52"
+            className="w-48 "
           />
         </div>
+
         <ul className="text-white flex justify-center items-center w-full h-full gap-12">
           <li className="relative text-xl text-white hover:text-[#F37A0E] hover:cursor-pointer before:content-[''] before:w-0 before:h-0.5 before:rounded before:bg-[#F37A0E] before:absolute before:bottom-0 before:left-0 hover:before:w-full  before:transition-all before:duration-200 transition-all duration-150 ease-in">
             Home
