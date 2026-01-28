@@ -2,6 +2,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { Outfit } from "next/font/google";
 
 import "./globals.css";
+import SmoothScroll from "./components/SmoothScroll";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,7 +25,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${outfit.className} antialiased dark`}>{children}</body>
+      <body className={`${outfit.className} antialiased dark`}>
+        <SmoothScroll>{children}</SmoothScroll>
+      </body>
     </html>
   );
 }

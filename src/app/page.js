@@ -8,6 +8,8 @@ import FlowingMenu from "@/components/FlowingMenu";
 import ImageTrail from "@/components/ImageTrail";
 
 import { FaInstagram } from "react-icons/fa";
+import LightRays from "@/components/LightRays";
+import DomeGallery from "@/components/DomeGallery";
 
 export default function Home() {
   const demoItems = [
@@ -39,12 +41,12 @@ export default function Home() {
   ];
   return (
     <>
-      <main className="relative flex justify-center items-center w-full h-screen overflow-hidden">
-        <header className="fixed top-0 left-0 w-full h-auto z-20">
-          <Navbar />
-        </header>
-        <div className="absolute text-white flex justify-center items-center flex-col w-full h-screen">
-          <h1 className="text-9xl uppercase font-black ">mage marketer</h1>
+      {/* <header className="fixed top-0 left-0 w-full h-auto z-20">
+        <Navbar />
+      </header> */}
+      <main className="relative flex justify-center items-center w-full h-vh overflow-hidden">
+        <div className="absolute text-white flex justify-center items-center flex-col w-full h-screen ">
+          <h1 className="text-9xl uppercase font-black ">Team 99</h1>
           <p className="text-2xl text-center mt-1 w-[60%] ">
             The Last Digital Marketing Agency , You Will Ever Need Driving
             business growth through smart and impactful digital marketing
@@ -61,20 +63,33 @@ export default function Home() {
             <CircularText text="Build • Market • Scale • " />
           </div>
         </div>
-        <div className="bg-black w-full h-screen">
+        <div className="bg-black w-full h-screen ">
           <FloatingLines />
+          {/* <LightRays
+            raysSpeed={1.1}
+            lightSpread={2}
+            rayLength={3}
+            followMouse={true}
+            mouseInfluence={0.2}
+            noiseAmount={0}
+            distortion={0}
+            className="custom-rays w-full h-full"
+            pulsating={false}
+            fadeDistance={1}
+            saturation={1}
+          /> */}
         </div>
       </main>
       <section className="relative bg-white rounded-[60px] w-full m-h-96 pt-10">
         <h1 className="text-[#F37A0E] text-2xl font-semibold text-center">
           WHO WE ARE
         </h1>
-        <p className="text-black text-center text-3xl">
+        <p className="text-black text-center text-xl">
           Driving business growth through smart and impactful digital marketing
         </p>
         <div className="w-full flex justify-around flex-row p-10">
           <div className="w-1/2">
-            <p className="text-black text-md">
+            <p className="text-black text-sm">
               Founded in 2025, Mage Marketer is a dynamic digital marketing
               agency in Pune. Our journey began with a simple yet powerful
               vision: to empower businesses with innovative digital marketing
@@ -95,7 +110,7 @@ export default function Home() {
             </p>
           </div>
           <div className="relative w-1/3">
-            <Image src="/logo.png" fill className="object-contain" />
+            <Image src="/logo.png" alt="Logo" fill className="object-contain" />
           </div>
         </div>
         <div className="absolute overflow-hidden top-0 left-0 z-10 h-full w-full">
@@ -119,31 +134,31 @@ export default function Home() {
         <div className="w-1/2 h-full flex justify-around items-center mt-12 ">
           <div className="flex flex-col justify-around items-center gap-20 h-full ">
             <div>
-              <h1 className="text-6xl font-medium">3+</h1>
-              <h3 className="text-2xl text-[#2058f9]">Years of Experience</h3>
+              <h1 className="text-5xl font-medium">3+</h1>
+              <h3 className="text-xl text-[#2058f9]">Years of Experience</h3>
             </div>
             <div>
-              <h1 className="text-6xl font-medium">1,236 +</h1>
-              <h3 className="text-2xl text-[#2058f9]">Successful Projects</h3>
+              <h1 className="text-5xl font-medium">1,236 +</h1>
+              <h3 className="text-xl text-[#2058f9]">Successful Projects</h3>
             </div>
           </div>
           <div className="flex flex-col justify-around items-center gap-20 h-full">
             <div>
-              <h1 className="text-6xl font-medium">436+</h1>
-              <h3 className="text-2xl text-[#2058f9]">Brands Transformed</h3>
+              <h1 className="text-5xl font-medium">436+</h1>
+              <h3 className="text-xl text-[#2058f9]">Brands Transformed</h3>
             </div>
             <div>
-              <h1 className="text-6xl font-medium">780+</h1>
-              <h3 className="text-2xl text-[#2058f9]">Campaigns Launched</h3>
+              <h1 className="text-5xl font-medium">780+</h1>
+              <h3 className="text-xl text-[#2058f9]">Campaigns Launched</h3>
             </div>
           </div>
         </div>
         <div className="w-1/2 h-full">
-          <h1 className="text-3xl">Your Brand Deserves More</h1>
+          <h1 className="text-2xl">Your Brand Deserves More</h1>
           <TextType
             text={["Growth", "Recongnition", "Visibility", "Engagement"]}
           />
-          <p className="text-white text-xl pt-10">
+          <p className="text-white text-lg pt-10">
             At Team 99, we believe your brand deserves more than just
             visibility, It deserves meaningful growth. We blend creativity with
             technology to craft strategies that resonate with the right audience
@@ -172,21 +187,21 @@ export default function Home() {
       </section>
       <section className="w-full m-h-96 bg-amber-50 rounded-4xl p-10 flex justify-center items-center flex-col">
         <div>
-          <h1 className="text-center text-[#F37A0E] text-3xl font-semibold">
+          <h1 className="text-center text-[#F37A0E] text-2xl font-semibold">
             Our Services
           </h1>
-          <h2 className="text-black text-center text-2xl">
+          <h2 className="text-black text-center text-xl">
             Strategic Services Designed to Elevate Your Brand
           </h2>
         </div>
-        <h3 className="text-black text-center w-1/2 mt-4">
+        <h3 className="text-black text-center w-1/2 mt-4 text-sm">
           We understand that the digital landscape is constantly evolving and we
           are here to guide you through it. With our comprehensive range of
           digital marketing services, we can assist you in achieving your online
           goals and growing your business.
         </h3>
         <div className="w-full h-full">
-          <div className="bg-white w-96">
+          <div className="bg-white w-64 rounded-xl">
             <FaInstagram className="text-black" />
             <h1 className="text-black">Social Media Marketing</h1>
             <p className="text-black">
@@ -195,6 +210,19 @@ export default function Home() {
             <button className="text-black">Learn more</button>
           </div>
         </div>
+      </section>
+      <section className="w-full h-vh flex flex-col gap-10">
+        <h1 className="text-3xl font-medium text-center text-white mt-10">
+          Our Team 99
+        </h1>
+        <DomeGallery
+          fit={0.8}
+          minRadius={600}
+          maxVerticalRotationDeg={0}
+          segments={34}
+          dragDampening={2}
+          grayscale={false}
+        />
       </section>
     </>
   );

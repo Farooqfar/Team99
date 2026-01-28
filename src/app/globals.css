@@ -135,3 +135,9 @@
 ::-webkit-scrollbar-thumb {
   background-color: #275dff;
 }
+
+html,
+body {
+  height: auto;
+  overflow-x: hidden;
+}
