@@ -1,4 +1,3 @@
-// src/components/SmoothScroll.jsx
 "use client";
 
 import { useEffect } from "react";
@@ -7,10 +6,10 @@ import Lenis from "@studio-freight/lenis";
 export default function SmoothScroll({ children }) {
   useEffect(() => {
     const lenis = new Lenis({
-      smooth: true,
-      lerp: 0.1, // smoothness
-      wheelMultiplier: 1,
-      touchMultiplier: 1.5,
+      lerp: 0.05,
+      smoothWheel: true,
+      smoothTouch: false,
+      wheelMultiplier: 0.9,
     });
 
     function raf(time) {
@@ -25,5 +24,5 @@ export default function SmoothScroll({ children }) {
     };
   }, []);
 
-  return <>{children}</>;
+  return children;
 }

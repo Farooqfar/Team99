@@ -41,9 +41,9 @@ export default function Home() {
   ];
   return (
     <>
-      {/* <header className="fixed top-0 left-0 w-full h-auto z-20">
+      <header className="fixed top-0 left-0 w-full h-auto z-20">
         <Navbar />
-      </header> */}
+      </header>
       <main className="relative flex justify-center items-center w-full h-vh overflow-hidden">
         <div className="absolute text-white flex justify-center items-center flex-col w-full h-screen ">
           <h1 className="text-9xl uppercase font-black ">Team 99</h1>
@@ -211,7 +211,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="w-full h-vh flex flex-col gap-10">
+      <section className="w-full h-screen flex flex-col gap-10">
         <h1 className="text-3xl font-medium text-center text-white mt-10">
           Our Team 99
         </h1>
