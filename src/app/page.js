@@ -10,6 +10,8 @@ import ImageTrail from "@/components/ImageTrail";
 import { FaInstagram } from "react-icons/fa";
 import LightRays from "@/components/LightRays";
 import DomeGallery from "@/components/DomeGallery";
+import { GiHiking } from "react-icons/gi";
+import { PiArrowLineUpRight } from "react-icons/pi";
 
 export default function Home() {
   const demoItems = [
@@ -200,14 +202,34 @@ export default function Home() {
           digital marketing services, we can assist you in achieving your online
           goals and growing your business.
         </h3>
-        <div className="w-full h-full">
-          <div className="bg-white w-64 rounded-xl">
-            <FaInstagram className="text-black" />
-            <h1 className="text-black">Social Media Marketing</h1>
-            <p className="text-black">
+        <div className="w-full h-full flex justify-center items-center flex-wrap gap-8">
+           <div className="relative group bg-white w-64 h-80 rounded-xl flex flex-col jusctify-center items-center p-8 gap-4 hover:rotate-3 hover:scale-110 shadow-2xl hover:cursor-pointer hover:bg-[#2058F9] transition-all duration-200 ease-in">
+            <GiHiking className="h-14 w-14 text-white bg-[#2058F9] rounded-xl p-1 group-hover:bg-white group-hover:text-[#2058F9]" />
+
+            <h1 className="text-black text-xl font-medium text-center group-hover:text-white">
+              Strategy &<br /> Consulting
+            </h1>
+
+            <p className="text-black text-center text-sm group-hover:text-white">
+              Expert business strategies and Consulting to drive success
+            </p>
+            <button className="absolute text-black bottom-8 border border-black p-1 rounded flex gap-2 justify-center items-center group-hover:text-white group-hover:bg-black hover:cursor-pointer">
+              Learn more <PiArrowLineUpRight />
+            </button>
+          </div>
+          <div className="relative group bg-white w-64 h-80 rounded-xl flex flex-col jusctify-center items-center p-8 gap-4 hover:rotate-6 hover:scale-105 shadow-2xl hover:cursor-pointer hover:bg-[#2058F9] transition-all duration-200 ease-in">
+            <FaInstagram className=" h-14 w-14 text-white bg-[#2058F9] rounded-xl p-1 group-hover:bg-white group-hover:text-[#2058F9]" />
+
+            <h1 className="text-black text-xl font-medium text-center group-hover:text-white">
+              Social Media <br /> Marketing
+            </h1>
+
+            <p className="text-black text-center text-sm group-hover:text-white">
               Boost brand engagement with powerful social media compaigns
             </p>
-            <button className="text-black">Learn more</button>
+            <button className="absolute text-black bottom-8 border border-black p-1 rounded flex gap-2 justify-center items-center group-hover:text-white group-hover:bg-black hover:cursor-pointer">
+              Learn more <PiArrowLineUpRight />
+            </button>
           </div>
         </div>
       </section>
