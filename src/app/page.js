@@ -53,15 +53,15 @@ export default function Home() {
       <main className="relative flex justify-center items-center w-full h-vh overflow-hidden">
         <div className="absolute text-white flex justify-center items-center flex-col w-full h-screen ">
           <h1 className="text-9xl uppercase font-black ">Team 99</h1>
-          <p className="text-2xl text-center mt-1 w-[60%] ">
+          <p className="text-xl text-center mt-1 w-[60%] ">
             The Last Digital Marketing Agency , You Will Ever Need Driving
             business growth through smart and impactful digital marketing
           </p>
           <div className="flex justify-center items-center gap-6 mt-6 z-10">
-            <button className="bg-[#4c00ff] w-36 p-2 rounded text-xl hover:bg-white hover:text-[#4c00ff] hover:cursor-pointer transition-all duration-200">
+            <button className="bg-[#4c00ff] w-36 p-2 rounded  hover:bg-white hover:text-[#4c00ff] hover:cursor-pointer transition-all duration-200">
               Contact Us
             </button>
-            <button className="bg-[#F37A0E] w-40 p-2 rounded text-xl hover:bg-white hover:cursor-pointer hover:text-[#F37A0E] transition-all duration-200 ">
+            <button className="bg-[#F37A0E] w-40 p-2 rounded hover:bg-white hover:cursor-pointer hover:text-[#F37A0E] transition-all duration-200 ">
               Our Services
             </button>
           </div>
@@ -102,7 +102,7 @@ export default function Home() {
               strategies that drive growth and success in the online world.
             </p>
             <br />
-            <p className="text-black text-md">
+            <p className="text-black text-sm">
               The name <strong>Team 99</strong> reflects our approach to digital
               marketing, combining the art of creativity to craft magical
               solutions for our clients. Our team consists of passionate

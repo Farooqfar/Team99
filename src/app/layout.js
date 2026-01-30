@@ -1,4 +1,4 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Xanh_Mono , Plus_Jakarta_Sans ,Space_Grotesk} from "next/font/google";
 import { Outfit } from "next/font/google";
 
 import "./globals.css";
@@ -6,6 +6,16 @@ import SmoothScroll from "./components/SmoothScroll";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
+const space = Space_Grotesk({
+  subsets:["latin"]
+})
+const Plus=Plus_Jakarta_Sans({
+  subsets:["latin"]
+})
+const Xanh = Xanh_Mono({
+  weight: ["400"],
   subsets: ["latin"],
 });
 const outfit = Outfit({
@@ -25,7 +35,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${outfit.className} antialiased dark`}>
+      <body className={`${space.className} antialiased dark selection:bg-[#2058f9] selection:text-white`}>
         <SmoothScroll>{children}</SmoothScroll>
       </body>
     </html>
