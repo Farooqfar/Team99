@@ -12,6 +12,10 @@ import LightRays from "@/components/LightRays";
 import DomeGallery from "@/components/DomeGallery";
 import { GiHiking } from "react-icons/gi";
 import { PiArrowLineUpRight } from "react-icons/pi";
+import { IoColorPalette } from "react-icons/io5";
+import { FaVideo } from "react-icons/fa6";
+import { CgPerformance } from "react-icons/cg";
+import { CgWebsite } from "react-icons/cg";
 
 export default function Home() {
   const demoItems = [
@@ -83,7 +87,7 @@ export default function Home() {
         </div>
       </main>
       <section className="relative bg-white rounded-[60px] w-full m-h-96 pt-10">
-        <h1 className="text-[#F37A0E] text-2xl font-semibold text-center">
+        <h1 className="text-[#2058F9] text-2xl font-semibold text-center">
           WHO WE ARE
         </h1>
         <p className="text-black text-center text-xl">
@@ -114,22 +118,6 @@ export default function Home() {
           <div className="relative w-1/3">
             <Image src="/logo.png" alt="Logo" fill className="object-contain" />
           </div>
-        </div>
-        <div className="absolute overflow-hidden top-0 left-0 z-10 h-full w-full">
-          <ImageTrail
-            items={[
-              "https://picsum.photos/id/287/300/300",
-              "https://picsum.photos/id/1001/300/300",
-              "https://picsum.photos/id/1025/300/300",
-              "https://picsum.photos/id/1026/300/300",
-              "https://picsum.photos/id/1027/300/300",
-              "https://picsum.photos/id/1028/300/300",
-              "https://picsum.photos/id/1029/300/300",
-              "https://picsum.photos/id/1030/300/300",
-              // ...
-            ]}
-            variant="1"
-          />
         </div>
       </section>
       <section className="w-full h-1/3 flex items-center justify-around p-20">
@@ -187,9 +175,9 @@ export default function Home() {
           />
         </div>
       </section>
-      <section className="w-full m-h-96 bg-amber-50 rounded-4xl p-10 flex justify-center items-center flex-col">
+      <section className="w-full m-h-96 bg-white rounded-4xl p-10 flex justify-center items-center flex-col">
         <div>
-          <h1 className="text-center text-[#F37A0E] text-2xl font-semibold">
+          <h1 className="text-center text-[#2058F9] text-2xl font-semibold">
             Our Services
           </h1>
           <h2 className="text-black text-center text-xl">
@@ -202,8 +190,8 @@ export default function Home() {
           digital marketing services, we can assist you in achieving your online
           goals and growing your business.
         </h3>
-        <div className="w-full h-full flex justify-center items-center flex-wrap gap-8">
-           <div className="relative group bg-white w-64 h-80 rounded-xl flex flex-col jusctify-center items-center p-8 gap-4 hover:rotate-3 hover:scale-110 shadow-2xl hover:cursor-pointer hover:bg-[#2058F9] transition-all duration-200 ease-in">
+        <div className="w-full h-full flex justify-center items-center flex-wrap gap-8 mt-10">
+          <div className="relative group  w-64 h-80 rounded-xl flex flex-col jusctify-center items-center p-8 gap-4 hover:rotate-3 hover:scale-110 shadow-2xl hover:cursor-pointer hover:bg-[#2058F9] transition-all duration-200 ease-in">
             <GiHiking className="h-14 w-14 text-white bg-[#2058F9] rounded-xl p-1 group-hover:bg-white group-hover:text-[#2058F9]" />
 
             <h1 className="text-black text-xl font-medium text-center group-hover:text-white">
@@ -213,11 +201,11 @@ export default function Home() {
             <p className="text-black text-center text-sm group-hover:text-white">
               Expert business strategies and Consulting to drive success
             </p>
-            <button className="absolute text-black bottom-8 border border-black p-1 rounded flex gap-2 justify-center items-center group-hover:text-white group-hover:bg-black hover:cursor-pointer">
+            <button className="absolute text-black bottom-8 border border-black p-1 pl-2 pr-2 rounded flex gap-2 justify-center items-center group-hover:text-white group-hover:bg-black hover:cursor-pointer">
               Learn more <PiArrowLineUpRight />
             </button>
           </div>
-          <div className="relative group bg-white w-64 h-80 rounded-xl flex flex-col jusctify-center items-center p-8 gap-4 hover:rotate-6 hover:scale-105 shadow-2xl hover:cursor-pointer hover:bg-[#2058F9] transition-all duration-200 ease-in">
+          <div className="relative group bg-white w-64 h-80 rounded-xl flex flex-col jusctify-center items-center p-8 gap-4 hover:rotate-3 hover:scale-110 shadow-2xl hover:cursor-pointer hover:bg-[#2058F9] transition-all duration-200 ease-in">
             <FaInstagram className=" h-14 w-14 text-white bg-[#2058F9] rounded-xl p-1 group-hover:bg-white group-hover:text-[#2058F9]" />
 
             <h1 className="text-black text-xl font-medium text-center group-hover:text-white">
@@ -227,16 +215,101 @@ export default function Home() {
             <p className="text-black text-center text-sm group-hover:text-white">
               Boost brand engagement with powerful social media compaigns
             </p>
-            <button className="absolute text-black bottom-8 border border-black p-1 rounded flex gap-2 justify-center items-center group-hover:text-white group-hover:bg-black hover:cursor-pointer">
+            <button className="absolute text-black bottom-8 border border-black p-1 pl-2 pr-2 rounded flex gap-2 justify-center items-center group-hover:text-white group-hover:bg-black hover:cursor-pointer">
+              Learn more <PiArrowLineUpRight />
+            </button>
+          </div>
+          <div className="relative group bg-white w-64 h-80 rounded-xl flex flex-col jusctify-center items-center p-8 gap-4 hover:rotate-3 hover:scale-110 shadow-2xl hover:cursor-pointer hover:bg-[#2058F9] transition-all duration-200 ease-in">
+            <IoColorPalette className=" h-14 w-14 text-white bg-[#2058F9] rounded-xl p-1 group-hover:bg-white group-hover:text-[#2058F9]" />
+
+            <h1 className="text-black text-xl font-medium text-center group-hover:text-white">
+              Graphics <br /> Designing
+            </h1>
+
+            <p className="text-black text-center text-sm group-hover:text-white">
+              Creative graphic designs that strengthen brand identity
+            </p>
+            <button className="absolute text-black bottom-8 border border-black p-1 pl-2 pr-2 rounded flex gap-2 justify-center items-center group-hover:text-white group-hover:bg-black hover:cursor-pointer">
+              Learn more <PiArrowLineUpRight />
+            </button>
+          </div>
+          <div className="relative group bg-white w-64 h-80 rounded-xl flex flex-col jusctify-center items-center p-8 gap-4 hover:rotate-3 hover:scale-110 shadow-2xl hover:cursor-pointer hover:bg-[#2058F9] transition-all duration-200 ease-in">
+            <FaVideo className=" h-14 w-14 text-white bg-[#2058F9] rounded-xl p-1 group-hover:bg-white group-hover:text-[#2058F9]" />
+
+            <h1 className="text-black text-xl font-medium text-center group-hover:text-white">
+              Video <br /> Production
+            </h1>
+
+            <p className="text-black text-center text-sm group-hover:text-white">
+              professional video production telling your brands unique story
+            </p>
+            <button className="absolute text-black bottom-8 border border-black p-1 pl-2 pr-2 rounded flex gap-2 justify-center items-center group-hover:text-white group-hover:bg-black hover:cursor-pointer">
+              Learn more <PiArrowLineUpRight />
+            </button>
+          </div>
+          <div className="relative group bg-white w-64 h-80 rounded-xl flex flex-col jusctify-center items-center p-8 gap-4 hover:rotate-3 hover:scale-110 shadow-2xl hover:cursor-pointer hover:bg-[#2058F9] transition-all duration-200 ease-in">
+            <CgPerformance className=" h-14 w-14 text-white bg-[#2058F9] rounded-xl p-1 group-hover:bg-white group-hover:text-[#2058F9]" />
+
+            <h1 className="text-black text-xl font-medium text-center group-hover:text-white">
+              Performance <br /> Marketing
+            </h1>
+
+            <p className="text-black text-center text-sm group-hover:text-white">
+              Tergeted compaigns that deliver measurable business growth
+            </p>
+            <button className="absolute text-black bottom-8 border border-black p-1 pl-2 pr-2 rounded flex gap-2 justify-center items-center group-hover:text-white group-hover:bg-black hover:cursor-pointer">
+              Learn more <PiArrowLineUpRight />
+            </button>
+          </div>
+          <div className="relative group bg-white w-64 h-80 rounded-xl flex flex-col jusctify-center items-center p-8 gap-4 hover:rotate-3 hover:scale-110 shadow-2xl hover:cursor-pointer hover:bg-[#2058F9] transition-all duration-200 ease-in">
+            <CgWebsite className=" h-14 w-14 text-white bg-[#2058F9] rounded-xl p-1 group-hover:bg-white group-hover:text-[#2058F9]" />
+
+            <h1 className="text-black text-xl font-medium text-center group-hover:text-white">
+              Website <br /> Development
+            </h1>
+
+            <p className="text-black text-center text-sm group-hover:text-white">
+              Tergeted compaigns that deliver measurable business growth
+            </p>
+            <button className="absolute text-black bottom-8 border border-black p-1 pl-2 pr-2 rounded flex gap-2 justify-center items-center group-hover:text-white group-hover:bg-black hover:cursor-pointer">
               Learn more <PiArrowLineUpRight />
             </button>
           </div>
         </div>
       </section>
-      <section className="w-full h-screen flex flex-col gap-10">
-        <h1 className="text-3xl font-medium text-center text-white mt-10">
-          Our Team 99
-        </h1>
+      <section className="w-full flex ">
+        <div className="w-1/2 h-full"></div>
+        <div className="w/12 h-full">
+          <h1>Our Clients</h1>
+          <p>Powering growth for businesses across industries.</p>
+          <p className="text-sm">
+            At Team 99, we believe that every brand has a unique journey
+            to growth and our mission is to guide you through it with carefully
+            designed strategies. We combine deep market research, innovative
+            tools and creative storytelling to craft campaigns that resonate
+            with your audience and drive measurable impact. Our approach is not
+            just about running ads or creating content — its about weaving
+            together the right mix of SEO, social media, design and analytics
+            into a cohesive roadmap. This ensures that your brand not only
+            captures attention but also builds trust, engagement and
+            long-lasting connections. With Mage Marketer as your partner, you
+            gain more than a service provider — you gain a growth curator
+            dedicated to unlocking your full potential.
+          </p>
+        </div>
+      </section>
+      <section className="w-full h-screen flex flex-col items-center gap-10 p-10">
+        <div className="flex flex-col justify-center items-center">
+          <h1 className="text-3xl font-medium text-center text-[#2058F9]">
+            Meet Our Expert Team
+          </h1>
+          <p className="text-center w-1/2 mt-1 text-sm">
+            Our team is made up of skilled professionals who are passionate
+            about delivering high-quality solutions. With experience,
+            creativity, and dedication, we work together to bring the best
+            results for our clients.
+          </p>
+        </div>
         <DomeGallery
           fit={0.8}
           minRadius={600}
