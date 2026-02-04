@@ -365,6 +365,47 @@ export default function Home() {
           </p>
         </div>
       </section>
+      <section className="w-full m-h-96 bg-white rounded-4xl p-10 flex justify-center items-center mt-10">
+        <div className="w-1/2">
+          <h1 className=" text-[#2058F9] text-2xl font-semibold">
+            Lets clear a few things up
+          </h1>
+          <h2 className=" text-black text-xl font-semibold mt-2">
+            Still Wondering If We are the Right Fit?
+          </h2>
+          <div className="mt-1">
+            <p className="text-black  text-sm">
+              We know that finding the right digital marketing partner can feel
+              like a big decision and we are here to make it simpler. At Mage
+              Marketer, we prioritize transparency, collaboration and
+              results-driven strategies. Whether you are a startup or an
+              established brand, our approach is completely tailored to your
+              unique needs. From flexible, goal-based packages to our deep
+              understanding of your business goals, we ensure that every
+              strategy we create is designed with you in mind.
+            </p>
+            <p className="text-black  text-sm mt-1">
+              We work alongside you to craft solutions that maximize your brands
+              potential and fit your budget, without compromising on quality.
+              Our focus is on creating long-lasting relationships built on
+              trust, delivering results you can measure, and continuously
+              optimizing our strategies to bring your business the attention it
+              deserves.
+            </p>
+            <p className="text-black  text-sm mt-1">
+              Have more questions? Whether its about timelines, budgets or how
+              we track progress, we are ready to answer all of them. Lets talk
+              and find out how we can work together to help your business grow.
+            </p>
+          </div>
+        </div>
+        <div className="w-1/2">
+        <div>
+          <h1>How much do your digital marketing services in Pune cost?</h1>
+          <p>We offer flexible, goal-based packages. We will suggest what works best once we understand your business.</p>
+        </div>
+        </div>
+      </section>
     </>
   );
 }
