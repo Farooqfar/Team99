@@ -278,59 +278,77 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="w-full h-96 flex pt-10">
-        <div className="w-1/2 h-full flex justify-around  m-0 p-0 overflow-hidden">
-          <Marquee
-            autoFill
-            direction="down"
-            className="h-full m-0 p-0"
-          >
-            <div className="bg-white w-28 h-28 flex justify-center items-center gaps-4 rounded-2xl border border-gray-400 m-2">
-              <Image src="/9.webp" alt="Logo" width={100} height={100} />
-            </div>
-            <div className="bg-white w-28 h-28 flex justify-center items-center gaps-4 rounded-2xl border border-black m-2">
-              <Image src="/logo.png" alt="Logo" width={100} height={100} />
-            </div>
-             <div className="bg-white w-28 h-28 flex justify-center items-center gaps-4 rounded-2xl border border-gray-400 m-2">
-              <Image src="/9.webp" alt="Logo" width={100} height={100} />
-            </div>
-            <div className="bg-white w-28 h-28 flex justify-center items-center gaps-4 rounded-2xl border border-black m-2">
-              <Image src="/logo.png" alt="Logo" width={100} height={100} />
-            </div>
-          </Marquee>
-          <Marquee autoFill direction="up" gradient={false} speed="25">
-            <div className="bg-white w-28 h-28 flex justify-center items-center gaps-4 rounded-2xl border border-gray-400 m-2">
-              <Image src="/9.webp" alt="Logo" width={100} height={100} />
-            </div>
-            <div className="bg-white w-28 h-28 flex justify-center items-center gaps-4 rounded-2xl border border-black m-2">
-              <Image src="/logo.png" alt="Logo" width={100} height={100} />
-            </div>
-             <div className="bg-white w-28 h-28 flex justify-center items-center gaps-4 rounded-2xl border border-gray-400 m-2">
-              <Image src="/9.webp" alt="Logo" width={100} height={100} />
-            </div>
-            <div className="bg-white w-28 h-28 flex justify-center items-center gaps-4 rounded-2xl border border-black m-2">
-              <Image src="/logo.png" alt="Logo" width={100} height={100} />
-            </div>
-          </Marquee>
-          <Marquee autoFill direction="down" gradient={false} className="">
-            <div className="bg-white w-28 h-28 flex justify-center items-center gaps-4 rounded-2xl border border-gray-400 m-2">
-              <Image src="/9.webp" alt="Logo" width={100} height={100} />
-            </div>
-            <div className="bg-white w-28 h-28 flex justify-center items-center gaps-4 rounded-2xl border border-black m-2">
-              <Image src="/logo.png" alt="Logo" width={100} height={100} />
-            </div>
-             <div className="bg-white w-28 h-28 flex justify-center items-center gaps-4 rounded-2xl border border-gray-400 m-2">
-              <Image src="/9.webp" alt="Logo" width={100} height={100} />
-            </div>
-            <div className="bg-white w-28 h-28 flex justify-center items-center gaps-4 rounded-2xl border border-black m-2">
-              <Image src="/logo.png" alt="Logo" width={100} height={100} />
-            </div>
-          </Marquee>
-        </div> 
+      <section className="w-full h-96 flex justify-around items-center pt-10">
+        <div className="w-1/2 h-full flex gap-8  m-0 p-0 overflow-hidden">
+          <div className="w-28 h-full ">
+            <Marquee autoFill direction="down">
+              <div className="bg-white w-28 h-28 flex justify-center items-center gaps-4 rounded-2xl border border-gray-400 m-2">
+                <Image src="/9.webp" alt="Logo" width={100} height={100} />
+              </div>
+              <div className="bg-white w-28 h-28 flex justify-center items-center gaps-4 rounded-2xl border border-black m-2">
+                <Image src="/logo.png" alt="Logo" width={100} height={100} />
+              </div>
+              <div className="bg-white w-28 h-28 flex justify-center items-center gaps-4 rounded-2xl border border-gray-400 m-2">
+                <Image src="/9.webp" alt="Logo" width={100} height={100} />
+              </div>
+              <div className="bg-white w-28 h-28 flex justify-center items-center gaps-4 rounded-2xl border border-black m-2">
+                <Image src="/logo.png" alt="Logo" width={100} height={100} />
+              </div>
+            </Marquee>
+          </div>
+          <div className="w-28 h-full ">
+            <Marquee
+              autoFill
+              direction="up"
+              gradient={false}
+              speed="25"
+              className="h-full m-0 p-0 "
+            >
+              <div className="bg-white w-28 h-28 flex justify-center items-center gaps-4 rounded-2xl border border-gray-400 m-2">
+                <Image src="/9.webp" alt="Logo" width={100} height={100} />
+              </div>
+              <div className="bg-white w-28 h-28 flex justify-center items-center gaps-4 rounded-2xl border border-black m-2">
+                <Image src="/logo.png" alt="Logo" width={100} height={100} />
+              </div>
+              <div className="bg-white w-28 h-28 flex justify-center items-center gaps-4 rounded-2xl border border-gray-400 m-2">
+                <Image src="/9.webp" alt="Logo" width={100} height={100} />
+              </div>
+              <div className="bg-white w-28 h-28 flex justify-center items-center gaps-4 rounded-2xl border border-black m-2">
+                <Image src="/logo.png" alt="Logo" width={100} height={100} />
+              </div>
+            </Marquee>
+          </div>
+          <div className="w-28 h-full">
+            <Marquee
+              autoFill
+              direction="down"
+              gradient={false}
+              speed="25"
+              className="h-full m-0 p-0"
+            >
+              <div className="bg-white w-28 h-28 flex justify-center items-center gaps-4 rounded-2xl border border-gray-400 m-2">
+                <Image src="/9.webp" alt="Logo" width={100} height={100} />
+              </div>
+              <div className="bg-white w-28 h-28 flex justify-center items-center gaps-4 rounded-2xl border border-black m-2">
+                <Image src="/logo.png" alt="Logo" width={100} height={100} />
+              </div>
+              <div className="bg-white w-28 h-28 flex justify-center items-center gaps-4 rounded-2xl border border-gray-400 m-2">
+                <Image src="/9.webp" alt="Logo" width={100} height={100} />
+              </div>
+              <div className="bg-white w-28 h-28 flex justify-center items-center gaps-4 rounded-2xl border border-black m-2">
+                <Image src="/logo.png" alt="Logo" width={100} height={100} />
+              </div>
+            </Marquee>
+          </div>
+        </div>
 
         <div className="w-1/2 h-full flex justify-center gap-2 flex-col p-16">
-          <h1 className=" text-[#2058F9] text-2xl font-semibold">Our Clients</h1>
-          <p className="text-xl">Powering growth for businesses across industries.</p>
+          <h1 className=" text-[#2058F9] text-2xl font-semibold">
+            Our Clients
+          </h1>
+          <p className="text-xl">
+            Powering growth for businesses across industries.
+          </p>
           <p className="text-sm">
             At Team 99, we believe that every brand has a unique journey to
             growth and our mission is to guide you through it with carefully
@@ -346,27 +364,6 @@ export default function Home() {
             dedicated to unlocking your full potential.
           </p>
         </div>
-      </section>
-      <section className="w-full h-screen flex flex-col items-center gap-10 p-10">
-        <div className="flex flex-col justify-center items-center">
-          <h1 className="text-3xl font-medium text-center text-[#2058F9]">
-            Meet Our Expert Team
-          </h1>
-          <p className="text-center w-1/2 mt-1 text-sm">
-            Our team is made up of skilled professionals who are passionate
-            about delivering high-quality solutions. With experience,
-            creativity, and dedication, we work together to bring the best
-            results for our clients.
-          </p>
-        </div>
-        <DomeGallery
-          fit={0.8}
-          minRadius={600}
-          maxVerticalRotationDeg={0}
-          segments={34}
-          dragDampening={2}
-          grayscale={false}
-        />
       </section>
     </>
   );
