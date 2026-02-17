@@ -51,43 +51,59 @@ export default function Home() {
       <header className="fixed top-0 left-0 w-full h-auto z-20">
         <Navbar />
       </header>
-      <main className="relative flex justify-center items-center w-full h-vh overflow-hidden">
-        <div className="absolute text-white flex justify-center items-center flex-col w-full h-screen ">
-          <h1 className="text-9xl uppercase font-black ">Team 99</h1>
-          <p className="text-xl text-center mt-1 w-[60%] ">
-            The Last Digital Marketing Agency , You Will Ever Need Driving
-            business growth through smart and impactful digital marketing
-          </p>
-          <div className="flex justify-center items-center gap-6 mt-6 z-10">
-            <button className="bg-[#4c00ff] w-36 p-2 rounded  hover:bg-white hover:text-[#4c00ff] hover:cursor-pointer transition-all duration-200">
-              Contact Us
-            </button>
-            <button className="bg-[#F37A0E] w-40 p-2 rounded hover:bg-white hover:cursor-pointer hover:text-[#F37A0E] transition-all duration-200 ">
-              Our Services
-            </button>
-          </div>
-          <div className="absolute bottom-5 right-1 z-10">
-            <CircularText text="Build • Market • Scale • " />
-          </div>
+      <main className="relative w-full min-h-screen bg-[url(/banner.png)] bg-cover bg-center bg-no-repeat p-5">
+        <div className="absolute top-40 ">
+          <h1 className=" text-white text-8xl uppercase font-black">
+            Ideas that
+          </h1>
+          <h1 className=" text-white text-8xl uppercase font-black">
+            Move Brands
+          </h1>
+          <Marquee>
+            <h1>Hello sir</h1>
+            <h1>Hello sir</h1>
+            <h1>Hello sir</h1>
+            <h1>Hello sir</h1>
+          </Marquee>
         </div>
-        <div className="bg-black w-full h-screen ">
-          <FloatingLines />
-          {/* <LightRays
-            raysSpeed={1.1}
-            lightSpread={2}
-            rayLength={3}
-            followMouse={true}
-            mouseInfluence={0.2}
-            noiseAmount={0}
-            distortion={0}
-            className="custom-rays w-full h-full"
-            pulsating={false}
-            fadeDistance={1}
-            saturation={1}
-          /> */}
+        <div className="absolute bottom-0 w-auto">
+          <h1 className="text-white text-[15vw] leading-none font-medium text-center">
+            Team 99
+          </h1>
+        </div>
+
+        <div className="absolute bottom-0 right-0 flex justify-center items-center gap-1 p-2">
+          <Image
+            src="/1.avif"
+            width={100}
+            height={100}
+            className=" h-52 rounded-2xl hover:w-52 transition-all duration-300 ease-in"
+            alt="1"
+          />
+          <Image
+            src="/2.avif"
+            width={100}
+            height={100}
+            className="h-52 rounded-2xl hover:w-52 transition-all duration-300 ease-in"
+            alt="1"
+          />
+          <Image
+            src="/3.avif"
+            width={100}
+            height={100}
+            className="h-52 rounded-2xl hover:w-52 transition-all duration-300 ease-in"
+            alt="1"
+          />
+          <Image
+            src="/4.avif"
+            width={100}
+            height={100}
+            className="h-52 rounded-2xl hover:w-52 transition-all duration-300 ease-in"
+            alt="1"
+          />
         </div>
       </main>
-      <section className="relative bg-white rounded-[60px] w-full m-h-96 pt-10">
+      {/* <section className="relative bg-white rounded-[60px] w-full m-h-96 pt-10">
         <h1 className="text-[#2058F9] text-2xl font-semibold text-center">
           WHO WE ARE
         </h1>
@@ -120,7 +136,7 @@ export default function Home() {
             <Image src="/logo.png" alt="Logo" fill className="object-contain" />
           </div>
         </div>
-      </section>
+      </section> */}
       <section className="w-full h-1/3 flex items-center justify-around p-20">
         <div className="w-1/2 h-full flex justify-around items-center mt-12 ">
           <div className="flex flex-col justify-around items-center gap-20 h-full ">
@@ -400,10 +416,13 @@ export default function Home() {
           </div>
         </div>
         <div className="w-1/2">
-        <div>
-          <h1>How much do your digital marketing services in Pune cost?</h1>
-          <p>We offer flexible, goal-based packages. We will suggest what works best once we understand your business.</p>
-        </div>
+          <div>
+            <h1>How much do your digital marketing services in Pune cost?</h1>
+            <p>
+              We offer flexible, goal-based packages. We will suggest what works
+              best once we understand your business.
+            </p>
+          </div>
         </div>
       </section>
     </>
